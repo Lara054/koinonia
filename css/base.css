@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color: #333;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.6;
+    background-color: #f9f8ef;
+
+}
+
+section {
+    max-height: 100vh;
+    padding-top: 65px;
+    margin: 0 100px
+}
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝　ヘッダー　＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.57);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 影で浮かせ感（任意） */
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝　ヒーロー　＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.hero {
+    height: calc(100vh - 160px);
+    background-size: cover;
+    border-radius: 50px;
+    margin: 110px 50px 50px 50px;
+}
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝　共通コンポーネント　＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+/* 相談するボタン */
+
+.btn-contact {
+    background-color: #fff;
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-contact a {
+    display: inline-block;
+    text-decoration: none;
+}
