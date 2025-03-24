@@ -1,79 +1,207 @@
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
-    color: #333;
-}
-
-html,
-body {
     margin: 0;
     padding: 0;
+  }
+  body {
     font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
     line-height: 1.6;
-    background-color: #f9f8ef;
+    background-color: #fffcf3;
+    color: #333;
 
-}
-
-section {
-    max-height: 100vh;
-    padding-top: 65px;
-    margin: 0 100px
-}
+    padding: 0 3%;
 
 
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝　ヘッダー　＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-header {
+    
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto; 
+  }
+
+  
+  .container {
+    max-width: 1200px;  
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .row {
     display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+  /* ====================================== ヘッダー */
+  header {
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: rgba(255, 255, 255, 0.57);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* 影で浮かせ感（任意） */
-}
-
-.header-nav ul {
-    display: flex;
+    padding: 20px;
+  
+  }
+ .header-nav a {
+    text-decoration: none;
+  }
+  .header-nav li {
     list-style: none;
-    gap: 32px;
-    margin: 0;
-    padding: 0;
-}
+  }
 
-nav li a {
-    text-decoration: none;
-    font-weight: 700;
-}
-
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝　ヒーロー　＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-
-.hero {
-    height: calc(100vh - 160px);
+  /* ======================================== ヒーロー */
+  .hero {
+    height: 500px;
+    padding-bottom: 3%;
+  }
+  .hero .container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/hero-background.jpg);
     background-size: cover;
-    border-radius: 50px;
-    margin: 110px 50px 50px 50px;
-}
-
-
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝　共通コンポーネント　＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-
-/* 相談するボタン */
-
-.btn-contact {
-    background-color: #fff;
+    background-repeat: no-repeat;
     border-radius: 25px;
-    font-size: 1rem;
-    padding: 10px;
-    text-align: center;
-}
+    
+  }
 
-.btn-contact a {
-    display: inline-block;
+  /* ========================================== ヒーローナビ */
+ 
+
+  .hero-nav .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .hero-nav-items {
+    justify-content: space-between;
+  }
+  .hero-nav-items a {
     text-decoration: none;
+  }
+  .hero-nav-item {
+    align-items: center;
+    width: 10%;
+
+  }
+  .hero-nav-item p {
+    text-align: center;
+  }
+  
+  .hero-nav-item.offset {
+    transform: translateY(-100px); /* ← 好きなだけ上にズラせる */
+  }
+
+  /*============================================  コイノニアとは */
+  .about .container {
+    align-items: center;
+    text-align: center;
+    max-width: 60%;
+  }
+
+  /* ============================================ カウンセラー紹介 */
+  .counselor {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .counselor-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    text-align: center;
+  }
+  .counselor-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .counselor-right img {
+    width: auto;
+    min-width: 200px;
+    max-height: 300px;
+    border-radius: 20px;   
+  }
+
+  /* ============================================== サポートメンバー */
+.support-member {
+  
+  align-items: center;
+  gap: 50px;
 }
+  .support-member-items {
+    gap: 50px;
+  }
+
+  .member-item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .member-item-right img {
+    max-height: 200px;
+    border-radius: 50%;
+  }
+
+  /* ================================================= 症例・実績 */
+  .cases .container {
+    align-items: center;
+    background-color: gray;
+    height: 50vh;
+  }
+
+  /* ================================================= どんな人が来てるの？ */
+  .use-cases .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+   
+  }
+  .use-cases-items {
+    width: 100%;
+    padding: 0 100px;
+  }
+  .use-cases .row.right {
+    justify-content: end;
+  }
+
+ .use-cases .item-right img {
+    max-height: 200px;
+    border-radius: 50%;
+  }
+
+ .use-cases .item-left img {
+    max-height: 200px;
+    border-radius: 50%;
+  }
+
+  /* ========================================================= アクセス */
+  .access img {
+    max-height: 500px;
+  }
