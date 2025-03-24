@@ -41,7 +41,9 @@
   .container {
     max-width: 1200px;  
     margin: 0 auto;
-    padding: 20px;
+  }
+  section {
+    padding: 150px 20px;
   }
 
   .row {
@@ -72,8 +74,8 @@
 
   /* ======================================== ヒーロー */
   .hero {
-    height: 500px;
-    padding-bottom: 3%;
+    height: 70vh;
+    padding: 50px 20px;
   }
   .hero .container {
     display: flex;
@@ -113,6 +115,7 @@
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
+    background-color: grey;
   }
   .hero-nav-item p {
     text-align: center;
