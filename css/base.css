@@ -4,17 +4,15 @@
     padding: 0;
   }
   body {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Kosugi Maru', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #fffcf3;
+    background-color: #fff2ef;
     color: #333;
 
-    padding: 0 3%;
 
-
-    
   }
+  
   h1 {
     font-size: 36px;
     font-weight: bold;
@@ -39,12 +37,11 @@
 
   
   .container {
-    max-width: 1200px;  
+    /* max-width: 1200px;   */
     margin: 0 auto;
+    
   }
-  section {
-    padding: 150px 20px;
-  }
+ 
 
   .row {
     display: flex;
@@ -60,9 +57,16 @@
 
 
   /* ====================================== ヘッダー */
+  .logo img {
+    opacity: 0.5;
+    border-radius: 50%;
+  }
   header {
+    align-items: center;
     justify-content: space-between;
-    padding: 20px;
+   background-color: white;
+   padding: 0 20px;
+   /* opacity: 0.8; */
   
   }
  .header-nav a {
@@ -82,7 +86,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/hero-background.jpg);
+    background-image: url(../images/hero-background2.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 25px;
@@ -91,7 +95,6 @@
 
   /* ========================================== ヒーローナビ */
  
-
   .hero-nav .container {
     height: 100%;
     display: flex;
@@ -99,7 +102,7 @@
   }
   .hero-nav-items {
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .hero-nav-items a {
     text-decoration: none;
@@ -114,15 +117,15 @@
     max-width: 100px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    object-fit: cover;
-    background-color: grey;
+    object-fit: contain;
+    /* background-color: grey; */
   }
   .hero-nav-item p {
     text-align: center;
   }
   
   .hero-nav-item.offset {
-    transform: translateY(-50px); /* ← 好きなだけ上にズラせる */
+    /* transform: translateY(-50px); ← 好きなだけ上にズラせる */
   }
 
   /*============================================  コイノニアとは */
@@ -130,12 +133,14 @@
     align-items: center;
     text-align: center;
     max-width: 60%;
+    padding-top: 100px;
   }
 
   /* ============================================ カウンセラー紹介 */
   .counselor {
     display: flex;
     flex-direction: column;
+    padding-top: 100px;
   }
   
   .counselor-left {
@@ -160,6 +165,7 @@
 
   /* ============================================== サポートメンバー */
 .support-member {
+  padding-top: 50px;
   
   align-items: center;
   gap: 50px;
@@ -184,6 +190,7 @@
     align-items: center;
     background-color: gray;
     height: 50vh;
+    padding-top: 100px;
   }
 
   /* ================================================= どんな人が来てるの？ */
@@ -192,6 +199,7 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    padding-top: 100px;
    
   }
   .use-cases-items {
@@ -213,6 +221,11 @@
   }
 
   /* ========================================================= アクセス */
+  .access {
+  
+    padding-top: 100px;
+  }
+  
   .access img {
     max-height: 500px;
   }
