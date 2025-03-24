@@ -96,6 +96,7 @@
     align-items: center;
   }
   .hero-nav-items {
+    width: 100%;
     justify-content: space-between;
   }
   .hero-nav-items a {
@@ -104,14 +105,21 @@
   .hero-nav-item {
     align-items: center;
     width: 10%;
-
+   
+  }
+  .hero-nav-item img {
+    /* width: 10vw; */
+    max-width: 100px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
   }
   .hero-nav-item p {
     text-align: center;
   }
   
   .hero-nav-item.offset {
-    transform: translateY(-100px); /* ← 好きなだけ上にズラせる */
+    transform: translateY(-50px); /* ← 好きなだけ上にズラせる */
   }
 
   /*============================================  コイノニアとは */
