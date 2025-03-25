@@ -2,230 +2,327 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  body {
-    font-family: 'Kosugi Maru', sans-serif;
+}
+
+body {
+    background-color: white;
+    /* ペールグリーン背景 */
+    color: #444444;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #fff2ef;
-    color: #333;
+}
 
+h1 {
+    font-size: 5vw;
+    font-weight: bold;
+}
 
-  }
-  
-  h1 {
-    font-size: 36px;
+h2 {
+    font-size: 3vw;
     font-weight: bold;
-  }
-  h2 {
-    font-size: 28px;
+}
+
+h3 {
+    font-size: 2vw;
     font-weight: bold;
-  }
-  h3 {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  p {
-    font-size: 16px;
+}
+
+p {
+    font-size: 2vw;
     line-height: 1.6;
-  }
+}
 
-  img {
+a {
+    text-decoration: none;
+    color: #444444;
+}
+
+img {
     max-width: 100%;
-    height: auto; 
-  }
+    height: auto;
+}
 
-  
-  .container {
+
+
+
+.container {
     /* max-width: 1200px;   */
     margin: 0 auto;
-    
-  }
- 
 
-  .row {
+}
+
+
+.row {
     display: flex;
     flex-direction: row;
     gap: 20px;
-  }
+}
 
-  .column {
+.column {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
+}
 
 
-  /* ====================================== ヘッダー */
-  .logo img {
-    opacity: 0.5;
-    border-radius: 50%;
-  }
-  header {
+/* ====================================== ヘッダー */
+.logo img {
+    /* opacity: 0.5; */
+    /* border-radius: 50%; */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
     align-items: center;
     justify-content: space-between;
-   background-color: white;
-   padding: 0 20px;
-   /* opacity: 0.8; */
-  
-  }
- .header-nav a {
-    text-decoration: none;
-  }
-  .header-nav li {
-    list-style: none;
-  }
+    background-color: white;
+    padding: 0 20px;
+    opacity: 0.7;
+    font-size: 1.5vw;
 
-  /* ======================================== ヒーロー */
-  .hero {
-    height: 70vh;
-    padding: 50px 20px;
-  }
-  .hero .container {
+}
+
+.header-nav li {
+    list-style: none;
+}
+
+/* ======================================== ヒーロー */
+.hero {
+    height: 100vh;
+    padding: 50px;
+    background-image: url(../images/hero-background.png);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.hero .container {
     display: flex;
     height: 100%;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/hero-background2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 25px;
-    
-  }
+}
 
-  /* ========================================== ヒーローナビ */
- 
-  .hero-nav .container {
+
+/* ========================================== ヒーローナビ */
+
+.hero-nav .container {
     height: 100%;
     display: flex;
     align-items: center;
-  }
-  .hero-nav-items {
+    gap: 50px;
+}
+
+.hero-nav-items {
     width: 100%;
     justify-content: space-around;
-  }
-  .hero-nav-items a {
+}
+
+.hero-nav-items a {
     text-decoration: none;
-  }
-  .hero-nav-item {
+}
+
+.hero-nav-item {
     align-items: center;
-    width: 10%;
-   
-  }
-  .hero-nav-item img {
+    width: 20%;
+
+}
+
+.hero-nav-item img {
     /* width: 10vw; */
     max-width: 100px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: contain;
     /* background-color: grey; */
-  }
-  .hero-nav-item p {
-    text-align: center;
-  }
-  
-  .hero-nav-item.offset {
-    /* transform: translateY(-50px); ← 好きなだけ上にズラせる */
-  }
+}
 
-  /*============================================  コイノニアとは */
-  .about .container {
+.hero-nav-item p {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.hero-nav-item.offset {
+    /* transform: translateY(-50px); ← 好きなだけ上にズラせる */
+}
+
+/*============================================  コイノニアとは */
+.about .container {
     align-items: center;
     text-align: center;
-    max-width: 60%;
-    padding-top: 100px;
-  }
+    padding: 0px 150px 50px 150px;
+}
 
-  /* ============================================ カウンセラー紹介 */
-  .counselor {
+.about {}
+
+
+
+/* ============================================ カウンセラー紹介 */
+.counselor {
+    padding: 50px;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
-  }
-  
-  .counselor-left {
+    background-image: url(../images/about-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.counselor-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     flex: 1;
     text-align: center;
-  }
-  .counselor-right {
+    padding: 50px 80px;
+}
+
+.counselor-right {
     flex: 1;
     display: flex;
     justify-content: center;
-  }
-  .counselor-right img {
-    width: auto;
-    min-width: 200px;
-    max-height: 300px;
-    border-radius: 20px;   
-  }
-
-  /* ============================================== サポートメンバー */
-.support-member {
-  padding-top: 50px;
-  
-  align-items: center;
-  gap: 50px;
+    align-items: center;
 }
-  .support-member-items {
-    gap: 50px;
-  }
 
-  .member-item-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .member-item-right img {
-    max-height: 200px;
-    border-radius: 50%;
-  }
+.counselor-right img {
+    height: 30vw;
+    border-radius: 20px;
+}
 
-  /* ================================================= 症例・実績 */
-  .cases .container {
-    align-items: center;
-    background-color: gray;
-    height: 50vh;
-    padding-top: 100px;
-  }
-
-  /* ================================================= どんな人が来てるの？ */
-  .use-cases .container {
-    display: flex;
-    flex-direction: column;
+/* ============================================== サポートメンバー */
+.support-member {
     align-items: center;
     gap: 50px;
-    padding-top: 100px;
-   
-  }
-  .use-cases-items {
     width: 100%;
-    padding: 0 100px;
-  }
-  .use-cases .row.right {
-    justify-content: end;
-  }
+}
 
- .use-cases .item-right img {
-    max-height: 200px;
+.support-member-items {
+
+    justify-content: space-around;
+    width: 100%;
+}
+
+.support-member-item {
+    flex: 1;
+    align-items: center;
+}
+
+.support-member-item img {
+    height: 15vw;
     border-radius: 50%;
-  }
+}
 
- .use-cases .item-left img {
-    max-height: 200px;
-    border-radius: 50%;
-  }
 
-  /* ========================================================= アクセス */
-  .access {
-  
-    padding-top: 100px;
-  }
-  
-  .access img {
+
+
+
+
+/* ================================================= 症例・実績 */
+.cases .container {
+    align-items: center;
+    padding: 100px;
+    gap: 50px;
+
+}
+
+.cases {
+    background-image: url(../images/cases-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -50px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    border: solid 2px #204e26;
+}
+
+
+table th {
+    position: relative;
+    text-align: left;
+    width: 30%;
+    background-color: #5a885f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+table th:after {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -10px;
+    border-left: 10px solid #5a885f;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+table td {
+    text-align: left;
+    width: 70%;
+    text-align: center;
+    background-color: #f0ffe3;
+    padding: 10px 0;
+}
+
+/* ================================================= どんな人が来てるの？ */
+.use-cases {
+    background-image: url(../images/use-cases-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+
+}
+
+.use-cases .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.use-cases-items {
+    width: 100%;
+}
+
+.use-cases-item {
+    flex: 1;
+    justify-content: space-between;
+}
+
+
+/* ========================================================= アクセス */
+.access {
+    background-image: url(../images/access-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -50px;
+
+    padding: 150px 50px 50px 50px;
+}
+
+.access .container {
+    align-items: center;
+}
+
+.access img {
     max-height: 500px;
-  }
+}

@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/home-page.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Shippori+Mincho&display=swap"
+        rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/script.js" defer></script>
 </head>
@@ -32,41 +36,42 @@
     <!-- ヒーロー -->
     <section class="hero">
         <div class="container column">
-            <h1 style="color: aliceblue;">インパクトのある一言</h1>
-            <h2 class="btn-contact" ><a href="" style="color: aliceblue;">ご相談はこちら →</a></h2>
+            <h1>コイノニア</h1>
+            <!-- ヒーローナビ -->
+            <section class="hero-nav">
+                <div class="container column">
+                    <h3>あなたが今、気になっていることはありますか？</h2>
+                        <div class="hero-nav-items row">
+                            <a href="#about" class="hero-nav-item column offset">
+                                <img src="../images/hero-nav-thinking.png" alt="" width="100">
+                                <p>コイノニアって何？</p>
+                            </a>
+                            <a href="#counselor" class="hero-nav-item column">
+                                <img src="../images/hero-nav-listen.png" alt="" width="100">
+                                <p>どんな人とお話しするの？</p>
+                            </a>
+                            <a href="#cases" class="hero-nav-item column">
+                                <img src="../images/hero-nav-thinking.png" alt="" width="100">
+                                <p>症例や実績は？</p>
+                            </a>
+                            <a href="" class="hero-nav-item column offset">
+                                <img src="../images/hero-nav-listen.png" alt="" width="100">
+                                <p>どんな人が来てるの？</p>
+                            </a>
+                        </div>
+                </div>
+            </section>
         </div>
     </section>
+    <section class="curved"></section>
 
-    <!-- ヒーローナビ -->
-    <section class="hero-nav">
-        <div class="container column">
-            <h2>あなたが今、気になっていることはありますか？</h2>
-            <div class="hero-nav-items row">
-                <a href="#about" class="hero-nav-item column offset">
-                    <img src="../images/hero-nav-thinking.png" alt="" width="100">
-                    <p>コイノニアって何？</p>                       
-                </a>
-                <a href="#counselor" class="hero-nav-item column">
-                    <img src="../images/hero-nav-listen.png" alt="" width="100">
-                    <p>どんな人とお話しするの？</p>
-                </a>
-                <a href="#cases" class="hero-nav-item column">
-                    <img src="" alt="" width="100">
-                    <p>症例や実績は？</p>
-                </a>
-                <a href=""class="hero-nav-item column offset">
-                    <img src="" alt=""width="100">
-                    <p>どんな人が来てるの？</p>
-                </a>
-            </div>
-        </div>
-    </section>
 
     <!-- コイノニアって何 -->
     <section class="about" id="about">
         <div class="container column">
 
             <h2>コイノニアとは？</h2>
+            <div class="wave-line"></div>
             <p>コイノニアは、統合失調症、双極性障害、うつ病など、精神的な病を抱えている方のための場所です。「治療を受けてきたけれど、改善が見られなかった」「病名はついているけれど、どう付き合っていいかわからない」そんな方が、少しずつ“自分らしさ”を取り戻していくために、カウンセラーと話しながら、一緒に整えていく場所です。
                 医療機関では「改善が難しい」と言われた症状でも、 実際にここで落ち着きを取り戻した方が何人もいます。
                 お薬や診断だけではたどり着けなかった回復の形を、 私たちは “人と人との関わり” の中で探していきます。
@@ -80,49 +85,33 @@
     <section class="counselor" id="counselor">
         <div class="counselor-main container row">
             <div class="counselor-left">
-                <h2>カウンセラー</h2>
-                <div class="counselor-name">名前：今西　三千代(いまにし　みちよ)
-                </div>
+                <h2>カウンセラー紹介</h2>
+                <p class="counselor-name">ウォニョン
+                </p>
                 <p>
                     テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                 </p>
-                <div class="btn-contact"><a href="">カウンセラーの想い →</a></div>
+                <div class="btn-contact"><a href="">カウンセラーの想い</a></div>
             </div>
             <div class="counselor-right">
-                <img src="../images/counselor.webp" alt="今西三千代の写真">
+                <img src="../images/person/wonyon.jpg" alt="今西三千代の写真">
             </div>
         </div>
         <div class="support-member container column">
             <h3>サポートメンバー</h3>
             <div class="support-member-items row">
-                <div class="support-member-item row">
-                    <div class="member-item-left">
-                        <p>吹き出し</p>
-                    </div>
-                    <div class="member-item-right">
-                        <img src="../images/counselor.webp" alt="サポートメンバー写真">
-                        <p>名前</p>
-                    </div>
+                <div class="support-member-item column">
+                    <img src="../images/person/sana.png" alt="サポートメンバー写真">
+                    <p>サナ</p>
                 </div>
-                <div class="support-member-item row">
-                    <div class="member-item-left">
-                        <p>吹き出し</p>
-                    </div>
-                    <div class="member-item-right">
-                        <img src="../images/counselor.webp" alt="サポートメンバー写真">
-                        <p>名前</p>
-                    </div>
+                <div class="support-member-item column">
+                    <img src="../images/person/soryun.png" alt="サポートメンバー写真">
+                    <p>ソリュン</p>
                 </div>
-                <div class="support-member-item row">
-                    <div class="member-item-left">
-                        <p>吹き出し</p>
-                    </div>
-                    <div class="member-item-right">
-                        <img src="../images/counselor.webp" alt="サポートメンバー写真">
-                        <p>名前</p>
-                    </div>
+                <div class="support-member-item column">
+                    <img src="../images/person/unche.png" alt="サポートメンバー写真">
+                    <p>ウンチェ</p>
                 </div>
-
             </div>
 
         </div>
@@ -131,39 +120,72 @@
     <section class="cases" id="cases">
         <div class="container column">
             <h2>症例・実績</h2>
-            <div class="cases-items">内容</div>
+            <table>
+                <tr>
+                    <th>会社名</th>
+                    <td>テーブル株式会社</td>
+                </tr>
+                <tr>
+                    <th>創業</th>
+                    <td>1940年</td>
+                </tr>
+                <tr>
+                    <th>従業員数</th>
+                    <td>500人</td>
+                </tr>
+                <tr>
+                    <th>電話番号</th>
+                    <td>000-000-0000</td>
+                </tr>
+                <tr>
+                    <th>電話番号</th>
+                    <td>000-000-0000</td>
+                </tr>
+                <tr>
+                    <th>電話番号</th>
+                    <td>000-000-0000</td>
+                </tr>
+                <tr>
+                    <th>電話番号</th>
+                    <td>000-000-0000</td>
+                </tr>
+                <tr>
+                    <th>電話番号</th>
+                    <td>000-000-0000</td>
+                </tr>
+            </table>
         </div>
     </section>
 
     <!-- どんな人が来てるの？ -->
     <section class="use-cases">
         <div class="container column">
-            <h2>こんな方が利用されています</h2>
+            <h2>こんな方がご利用されています</h2>
             <div class="use-cases-items column">
-                <div class="use-cases-item row left">
-                        <div class="item-left">
-                            <img src="../images/counselor.webp" alt="サポートメンバー写真">
-                        </div>
-                        <div class="item-right">
-                            <p>吹き出し</p>
-                        </div>
+                <div class="use-cases-item row">
+                    <div class="left">
+                        <p>うつ状態にある</p>
+                    </div>
+                    <div class="center"></div>
+                    <div class="right">
+                        <p>子供が言うことを聞いてくれない</p>
+                    </div>
                 </div>
-                <div class="use-cases-item row right">
-                        <div class="item-left">
-                            <p>吹き出し</p>
-                        </div>
-                        <div class="item-right">
-                            <img src="../images/counselor.webp" alt="サポートメンバー写真">
-                        </div>
+                <div class="use-cases-item row">
+                    <div class="left"></div>
+                    <div class="center">
+                        <p>統合失調に苦しんでいる</p>
+                    </div>
+                    <div class="right"></div>
                 </div>
-                <div class="use-cases-item row left">
-                        <div class="item-left">
-                            <img src="../images/counselor.webp" alt="サポートメンバー写真">
-
-                        </div>
-                        <div class="item-right">
-                            <p>吹き出し</p>
-                        </div>
+                <div class="use-cases-item row">
+                    <div class="left">
+                        <p>生きるのが辛い</p>
+                    </div>
+                    <div class="center"></div>
+                    <div class="right">
+                        <p>よる眠ることができない</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -173,18 +195,21 @@
         <div class="container column">
             <h2>アクセス</h2>
             <img src="../images/map.png" alt="地図">
-            <div class="map-info row">
-                <h3>所在地：</h3>
-                <div>111-1111 千葉県〇〇市〇〇町1-1-1</div>
-            </div>
-            <div>＊最寄の駅（東金駅、成東駅）まで車でお迎えにあがります。</div>
-            <div class="map-info row">
-                <h3>電話：</h3>
-                <div>000-0000-0000</div>
-            </div>
-            <div class="map-info row">
-                <h3>メール：</h3>
-                <div>test@example.com</div>
+            <div class="info column">
+
+                <div class="map-info row">
+                    <h3>所在地：</h3>
+                    <div>111-1111 千葉県〇〇市〇〇町1-1-1</div>
+                </div>
+                <div>＊最寄の駅（東金駅、成東駅）まで車でお迎えにあがります。</div>
+                <div class="map-info row">
+                    <h3>電話：</h3>
+                    <div>000-0000-0000</div>
+                </div>
+                <div class="map-info row">
+                    <h3>メール：</h3>
+                    <div>test@example.com</div>
+                </div>
             </div>
 
         </div>
