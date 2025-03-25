@@ -45,11 +45,23 @@ img {
     height: auto;
 }
 
+.button {
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+
+.button.green {
+    background-color: #DAF0D7;
+}
+
+.button.white {
+    background-color: #ffffff;
+}
+
 
 
 
 .container {
-    /* max-width: 1200px;   */
     margin: 0 auto;
 
 }
@@ -95,7 +107,7 @@ header {
 .hero {
     height: 100vh;
     padding: 50px;
-    background-image: url(../images/hero-background.png);
+    background-image: url(../images/background/hero-background.png);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -168,7 +180,7 @@ header {
     display: flex;
     flex-direction: column;
     padding-top: 100px;
-    background-image: url(../images/about-background.png);
+    background-image: url(../images/background/about-background.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -233,7 +245,7 @@ header {
 }
 
 .cases {
-    background-image: url(../images/cases-background.png);
+    background-image: url(../images/background/cases-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -50px;
@@ -283,7 +295,7 @@ table td {
 
 /* ================================================= どんな人が来てるの？ */
 .use-cases {
-    background-image: url(../images/use-cases-background.png);
+    background-image: url(../images/background/use-cases-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 50px;
@@ -311,7 +323,7 @@ table td {
 
 /* ========================================================= アクセス */
 .access {
-    background-image: url(../images/access-background.png);
+    background-image: url(../images/background/access-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -50px;
