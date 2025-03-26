@@ -353,3 +353,17 @@ table td {
 .access img {
     max-height: 500px;
 }
+
+
+
+/* スクロール表示 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 3s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

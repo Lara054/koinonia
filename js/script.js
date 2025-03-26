@@ -1,8 +1,6 @@
 $(window).on("load", function () {
-    // まず .hero セクション全体を表示
     $(".hero").addClass("show");
 
-    // 中の要素を順番に表示
     $(".fade-item").each(function (i) {
         const $this = $(this);
         setTimeout(function () {
@@ -10,3 +8,19 @@ $(window).on("load", function () {
         }, i * 800);
     });
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+  
+    document.querySelectorAll(".fade-in").forEach((el) => {
+      observer.observe(el);
+    });
+  });
+  
