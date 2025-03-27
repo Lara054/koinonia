@@ -58,14 +58,9 @@ img {
     background-color: #ffffff;
 }
 
-
-
-
 .container {
     margin: 0 auto;
-
 }
-
 
 .row {
     display: flex;
@@ -338,7 +333,7 @@ table td {
 
 /* ========================================================= アクセス */
 .access {
-    background-image: url(../images/background/access-background.png);
+    /* background-image: url(../images/background/access-background.png); */
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -50px;
