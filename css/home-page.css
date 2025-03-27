@@ -1,0 +1,221 @@
+/* ======================================== ヒーロー */
+.hero {
+    background-image: url(../images/background/hero-background.png);
+}
+
+
+
+
+
+/* ========================================== ヒーローナビ */
+
+
+.hero-nav-items {
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.hero-nav-items a {
+    text-decoration: none;
+}
+
+.hero-nav-item {
+    align-items: center;
+    width: 20%;
+
+}
+
+.hero-nav-item img {
+    /* width: 10vw; */
+    max-width: 100px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: contain;
+    /* background-color: grey; */
+}
+
+.hero-nav-item p {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.hero-nav-item.offset {
+    /* transform: translateY(-50px); ← 好きなだけ上にズラせる */
+}
+
+/*============================================  エルピスとは */
+.about .container {
+    align-items: center;
+    text-align: center;
+    padding: 60px 150px 50px 150px;
+}
+
+.about {}
+
+
+
+/* ============================================ カウンセラー紹介 */
+.counselor {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    background-image: url(../images/background/about-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.counselor-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.counselor-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counselor-right img {
+    height: 30vw;
+    border-radius: 20px;
+}
+
+/* ============================================== サポートメンバー */
+.support-member {
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.support-member-items {
+
+    justify-content: space-around;
+    width: 100%;
+}
+
+.support-member-item {
+    flex: 1;
+    align-items: center;
+}
+
+.support-member-item img {
+    height: 15vw;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/* ================================================= 症例・実績 */
+.cases .container {
+    align-items: center;
+    padding: 100px;
+    gap: 50px;
+
+}
+
+.cases {
+    background-image: url(../images/background/cases-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -50px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    border: solid 2px #204e26;
+}
+
+
+table th {
+    position: relative;
+    text-align: left;
+    width: 30%;
+    background-color: #5a885f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+table th:after {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -10px;
+    border-left: 10px solid #5a885f;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+table td {
+    text-align: left;
+    width: 70%;
+    text-align: center;
+    background-color: #f0ffe3;
+    padding: 10px 0;
+}
+
+/* ================================================= どんな人が来てるの？ */
+.use-cases {
+    background-image: url(../images/background/use-cases-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+
+}
+
+.use-cases .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.use-cases-items {
+    width: 100%;
+}
+
+.use-cases-item {
+    flex: 1;
+    justify-content: space-between;
+}
+
+
+/* ========================================================= アクセス */
+.access {
+    /* background-image: url(../images/background/access-background.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -50px;
+
+    padding: 150px 50px 50px 50px;
+}
+
+.access .container {
+    align-items: center;
+}
+
+.access img {
+    max-height: 500px;
+}

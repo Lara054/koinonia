@@ -1,0 +1,51 @@
+.hero {
+    background-image: url(../images/background/hero-background.png);
+}
+
+
+.about .container {
+    align-items: center;
+    text-align: center;
+    padding: 150px;
+}
+.how-to-support .container {
+    align-items: center;
+    text-align: center;
+    padding: 60px 150px 50px 150px;
+}
+
+.support-example {
+    width: 50vw;
+ 
+    justify-content: left;
+    align-items: start;
+    gap: 20px;
+    padding: 50px;
+}
+
+
+.support-example-item {
+    background-color: #204e26;
+    width: 100%;
+    border-radius: 25px;
+    padding: 20px 50px;
+    color: white;
+}
+.value {
+    gap: 10px;
+    justify-content: center;
+    padding: 50px;
+}
+.value .row {
+    gap: 50px;
+}
+.value img {
+    height: 50vw;
+    border-radius: 50%;
+}
+
+.facility .container {
+    align-items: center;
+    text-align: center;
+    padding: 150px;
+}
