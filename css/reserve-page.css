@@ -1,0 +1,48 @@
+.reserve .container {
+    align-items: center;
+    gap: 50px;
+}
+
+
+
+.time-line .column {
+    gap: 50px;
+}
+
+.time-line-item.row {
+    width: 50vw;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.step-content {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(149, 235, 112, 0.681);
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.bottom-arrow {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* 相談フォーム */
+
+.form .column {
+    align-items: center;
+    background-color: rgba(113, 113, 113, 0.649);
+    padding: 50px;
+    width: 70vw;
+}
+
+.form-item {
+    display: block;
+}
+
+.form-content {
+    width: 50vw;
+}

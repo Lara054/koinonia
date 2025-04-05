@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相談予約</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/reserve-page.css">
+
+    <!-- ここまで css -->
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/script.js" defer></script>
+    <!-- ここまで　js -->
+
+
+
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="row">
+        <div class="logo">
+            <a href="#">
+
+                <img src="../images/logo.png" alt="ロゴ">
+            </a>
+        </div>
+        <nav class="header-nav">
+            <ul class="row">
+                <li><a href="about.html">エルピスについて</a></li>
+                <li><a href="">実績・症例</a></li>
+                <li><a href="">カウンセラーの想い</a></li>
+                <li><a href="">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ヒーロー -->
+    <div class="main column">
+
+        <section class="hero">
+            <div class="container">
+                <h1>相談予約</h1>
+            </div>
+        </section>
+        <section class="reserve" id="reserve">
+            <div class="container column fade-in">
+
+                <h2>ご相談の流れ</h2>
+                <div class="time-line">
+                    <div class="column">
+                        <div class="time-line-item row">
+                            <div class="step-number">
+                                <h3>step1</h3>
+                            </div>
+                            <div class="step-content">
+                                <h3>相談日を下記フォームから送信</h3>
+                            </div>
+                        </div>
+                        <div class="bottom-arrow">⬇︎</div>
+                        <div class="time-line-item row">
+                            <div class="step-number">
+                                <h3>step2</h3>
+                            </div>
+                            <div class="step-content">
+                                <h3>こちらから相談日確定メールを送信致します</h3>
+                            </div>
+                        </div>
+                        <div class="bottom-arrow">⬇︎</div>
+                        <div class="time-line-item row">
+                            <div class="step-number">
+                                <h3>step3</h3>
+                            </div>
+                            <div class="step-content">
+                                <h3>対面で相談を受け具体的な進め方を決めます</h3>
+                            </div>
+                        </div>
+                        <div class="bottom-arrow">⬇︎</div>
+                        <div class="time-line-item row">
+                            <div class="step-number">
+                                <h3>step4</h3>
+                            </div>
+                            <div class="step-content">
+                                <h3>その後、実際にサービスを受ける場合は契約の手続きになります</h3>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="form">
+            <div class="container column">
+                <h2>相談フォーム</h2>
+                <form action="#" method="post">
+                    <div class="form-item">
+                        <label for="person">Q1.ご相談されるのは？</label><br>
+                        <select name="person" id="person" class="form-content">
+                            <option value="own" selected disabled>選択してください</option>
+                            <option value="own">ご自身</option>
+                            <option value="family">ご家族</option>
+                            <option value="else">その他</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="name">Q2.お名前</label><br>
+                        <input class="form-content" type="text" name="name" value="">
+                    </div>
+                    <div class="form-item">
+                        <label for="emial">Q3.ご連絡先</label><br>
+                        <input class="form-content" type="email" name="email" value="">
+                    </div>
+                    <div class="form-item">
+                        <label for="content">Q4.ご相談内容</label><br>
+                        <textarea name="content" id="content" rows="5" cols="80"></textarea>
+                    </div>
+                    <button type="submit">送信する</button>
+
+                </form>
+
+            </div>
+        </section>
+    </div>
+
+
+
+</body>
+
+</html>
