@@ -1,13 +1,5 @@
-$(window).on("load", function () {
-  $('.autoplay').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
-
+$(function () {
   $(".hero").addClass("show");
-
   $(".fade-item").each(function (i) {
     const $this = $(this);
     setTimeout(function () {
