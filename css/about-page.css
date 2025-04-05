@@ -8,6 +8,7 @@
     text-align: center;
     padding: 150px;
 }
+
 .how-to-support .container {
     align-items: center;
     text-align: center;
@@ -16,7 +17,7 @@
 
 .support-example {
     width: 50vw;
- 
+
     justify-content: left;
     align-items: start;
     gap: 20px;
@@ -31,14 +32,17 @@
     padding: 20px 50px;
     color: white;
 }
+
 .value {
     gap: 10px;
     justify-content: center;
     padding: 50px;
 }
+
 .value .row {
     gap: 50px;
 }
+
 .value img {
     height: 50vw;
     border-radius: 50%;
@@ -48,4 +52,9 @@
     align-items: center;
     text-align: center;
     padding: 150px;
+}
+
+.autoplay div {
+    width: 800px;
+    margin: 0 20px;
 }
