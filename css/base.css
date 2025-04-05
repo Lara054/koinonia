@@ -1,3 +1,9 @@
+/* import */
+/* importすると管理は楽になるけど読み込みが遅くなるためパフォーマンスに影響がでる */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Shippori+Mincho&display=swap");
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -78,14 +84,14 @@ img {
 
 /* スクロール表示 */
 .fade-in {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 3s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 3s ease;
 }
 
 .fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .fade-item {
