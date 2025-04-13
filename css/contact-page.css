@@ -1,0 +1,29 @@
+.hero-content {
+
+    text-align: center;
+}
+
+section {
+    margin: 0 200px;
+}
+
+.form {
+    background-color: #204e2638;
+    padding: 30px 60px;
+    border-radius: 20px;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-item label {
+    display: inline-block;
+    width: 150px;
+}
+
+.form-item input {
+    width: 300px;
+}
